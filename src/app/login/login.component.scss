@@ -1,0 +1,77 @@
+// old css
+.navbar{
+  height: 8vh;
+  background-color:#3E5062!important;
+}
+
+.navbarHeadHolder a {
+  font-size:2vw;
+  color:white;
+}
+
+@media screen and (max-width:600px){
+  .navbar{
+    height: auto;
+    background-color:#3E5062!important;
+  }
+
+  .navbarHeadHolder a {
+    font-size:7vw;
+  }
+
+  .material-icons {
+
+    font-size: 9vw;
+  }
+}
+
+.mainDiv{
+    height: 90vh;
+}
+
+
+.formDiv{
+    background-color: white;
+    height: 90vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.form-group input{
+    border:1px solid rgb(190, 190, 190);
+}
+
+::placeholder {
+    color:rgb(151, 151, 151);
+    opacity: 1; /* Firefox */
+  }
+
+#mainHead{
+    font-size: 2.7vw;
+}
+
+.material-icons {
+    display:inline-flex;
+    vertical-align:top;
+}
+
+.loginBtn{
+    background-color: #3E5062;
+    border:black;
+}
+
+.loginBtn:hover{
+    background-color: #3E5062;
+}
+
+
+@media screen and (max-width:600px){
+    #mainHead{
+        font-size: 8.5vw;
+    }
+}
+
+.main-logo-corp {
+  width: 136px !important;
+}

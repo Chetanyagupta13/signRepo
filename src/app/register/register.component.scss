@@ -1,0 +1,162 @@
+.navbar{
+  height: 8vh;
+  background-color:#3E5062!important;
+}
+
+.navbarHeadHolder a {
+  font-size:2vw;
+  color:white;
+}
+
+@media screen and (max-width:600px){a
+  .navbar{
+    height: auto;
+    background-color:#3E5062!important;
+  }
+
+  .navbarHeadHolder a {
+    font-size:7vw;
+  }
+
+  .material-icons {
+
+    font-size: 9vw;
+  }
+
+  .imageDiv {
+    display: none;
+  }
+
+  .hiddenDiv {
+    display: none;
+  }
+
+}
+
+
+
+.formDiv{
+    background-color: #fff;
+    justify-content: center;
+}
+
+.form-group input{
+    background-color: fff!important;
+    border:1px solid rgb(190, 190, 190);
+}
+
+.form-group select{
+    background-color: fff!important;
+    border:1px solid rgb(190, 190, 190);
+    color:gray;
+}
+
+::placeholder {
+    color:gray;
+    opacity: 1; /* Firefox */
+  }
+
+
+
+.signUpBtn{
+    background-color: #3E5062;
+    border:black;
+}
+
+.signUpBtn:hover{
+    background-color: #3E5062;
+}
+
+#mainHead{
+    font-size: 2.7vw;
+    margin-top: 20vw;
+}
+
+.material-icons {
+    display:inline-flex;
+    vertical-align:top;
+}
+.mainDiv{
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+@media screen and (max-width:600px){
+    #mainHead{
+        font-size: 8vw;
+    }
+}
+
+.main-logo-corp {
+  width: 136px !important;
+}
+
+.register-header {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.register {
+  background-color: #fff;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.col-1 {
+  background-color: #fff;
+}
+
+.alert {
+  margin-top: 1rem;
+}
+
+.bg-white {
+  height: 92vh;
+}
+
+
+.countryDropdown{
+  padding-left: 2vw;
+  outline: none!important;
+}
+
+.phoneNoInput{
+  border-radius: 5px;
+  font-size: 0.9rem;
+  outline: none!important;
+}
+
+
+
+@media screen and (max-width:600px){
+  .countryDropdown{
+    padding-left: 7vw;
+  }
+
+  .phoneNoInput{
+    padding-right: 155px!important;
+  }
+
+  .form-group input {
+    width: 98%;
+  }
+
+  .form-group select {
+    width: 98%;
+  }
+}
+
+.disable-signup:hover{
+  cursor: not-allowed;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+input:focus{
+  background-color: #d1dfee;
+}

@@ -1,0 +1,60 @@
+
+
+<div class="row bg-white">
+  <div class="col imageDiv">
+  </div>
+  <div class="col=register">
+    <div class="register-header justify-content-center">
+      <div class="text-center">
+        <span id="mainHead">Register</span>
+      </div>
+
+      <div *ngIf="invalidEmailError" class="alert alert-fill-danger text-center" role="alert">
+        <span class="mdi mdi-information-outline"></span> *Should be a valid email!
+      </div>
+
+      <div *ngIf="emptyFieldError" class="alert alert-fill-danger text-center" role="alert">
+        <span class="mdi mdi-information-outline"></span> Please fill the required (*) fields!
+      </div>
+      <div *ngIf="identicalEmailsError" class="alert alert-fill-danger text-center" role="alert">
+        <span class="mdi mdi-information-outline"></span> *Email already exists!
+      </div>
+
+      <div *ngIf="passwordLengthError" class="alert alert-fill-danger text-center" role="alert">
+        <span class="mdi mdi-information-outline"></span> *Password should be atlease 8 characters!
+      </div>
+      <div *ngIf="passwordMismatchError" class="alert alert-fill-danger text-center" role="alert">
+        <span class="mdi mdi-information-outline"></span> *Enter same password in both password fields!
+      </div>
+      <div *ngIf="passwordNotStrong" class="alert alert-fill-danger text-center" role="alert">
+        <span class="mdi mdi-information-outline"></span> *Password must contain least one special, lowercase, upper character and number.
+      </div>
+    </div>
+    <div class="row " style="margin-right: 100px;">
+      <div class="col-12 formDiv auth-form-light text-left">
+        <!-- <div class="pt-1"> -->
+        <div class="form-group">
+          <input type="text" class="form-control form-control-lg" id="exampleInputUsername1"
+            placeholder="Enter Full Name *" [(ngModel)]="user.name" name="name" autocomplete="off">
+        </div>
+        <div class="form-group">
+          <input [disabled]="emailVerified" type="email" class="form-control form-control-lg" id="exampleInputEmail1" placeholder="Email *"
+            [(ngModel)]="user.email" name="email" autocomplete="off">
+        </div>
+        <div class="form-group">
+          <input type="password" class="form-control form-control-lg" id="exampleInputPassword1"
+            placeholder="Enter Password *" [(ngModel)]="user.password" name="password">
+        </div>
+        <div class="text-center mb-4" >
+          <button class="signUpBtn btn btn-primary btn-lg font-weight-medium auth-form-btn"
+          (click)="submit()">SIGN UP
+          </button>
+        </div>
+        <!-- </div> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- otp verify modal -->

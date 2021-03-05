@@ -25,5 +25,13 @@ export class AuthServiceService {
     })
   }
 
+  update($data:any)
+  {
+    return this.http.post("http://localhost:5000"+"/api/auth/update", $data)
+    .pipe((response)=>{
+      return response;
+    })
+  }
+
   
 }

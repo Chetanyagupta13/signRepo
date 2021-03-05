@@ -46,22 +46,11 @@ export class LoginComponent implements OnInit {
       if (this.validateEmail(this.user.email) && this.user.password.length >= 5) {
         this.auth.login(this.user).subscribe((data: any) => {
           if (data.success) {
-            if (data.admin===true) {
-              this.showError = false;
-              localStorage.setItem('token', JSON.stringify(data.token))
-              localStorage.setItem('name', data.name)
-              localStorage.setItem('email', data.email)
-            }
-            else {
-            this.showError = false;
-            localStorage.setItem('currentUser', JSON.stringify(data.user_id))
-            localStorage.setItem('token', JSON.stringify(data.token))
-            localStorage.setItem('name', data.name)
+            // localStorage.setItem('token', JSON.stringify(data.token))
+            // localStorage.setItem('name', data.name)
             localStorage.setItem('email', data.email)
-            localStorage.setItem('profile_image', data.profile_image)
-            localStorage.setItem('payment_status', data.payment_status),
-            this.router.navigate(['/codelist']);
-            }
+            // localStorage.setItem('profile_image', data.profile_image)
+            this.router.navigate(['profile']);
           } else {
             this.showError = true;
           }
